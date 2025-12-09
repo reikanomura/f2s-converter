@@ -1,4 +1,6 @@
+! ----------------------------------------------------------
 module fem_types
+
   implicit none
 
 ! -------------------------------
@@ -12,7 +14,7 @@ module fem_types
      integer, pointer :: nc(:,:) ! ローカル要素節点番号 (3, nelem)
   end type surface_mesh
 end module
-
+! ----------------------------------------------------------
 program fluid2solid_force
   use fem_types
   implicit none
